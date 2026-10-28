@@ -5,7 +5,7 @@ if errorlevel 1 exit 1
 
 :: Configure and install based on other `bld.bat`s and
 ::https://github.com/google/crc32c/blob/master/.appveyor.yml
-cmake -G "Ninja" ^
+cmake %CMAKE_ARGS% -G "Ninja" ^
          -DBUILD_TESTING=OFF ^
          -DBUILD_SHARED_LIBS=ON ^
          -DCMAKE_BUILD_TYPE=Release ^
